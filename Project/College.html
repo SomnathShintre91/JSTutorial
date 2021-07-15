@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #table {
+            background-color: #f1f1c1;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .container .form-group {
+            margin: 5px;
+        }
+        
+        .container .result {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <table id="table" cellspacing="5px">
+                <caption>Student Details</caption>
+                <tr>
+                    <td>Roll No.</td>
+                    <td><input type="number" name="roll" id="roll"></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="stdName" id="stdName"></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="text" name="mail" id="mail"></td>
+                </tr>
+                <tr>
+                    <td>Prn No.</td>
+                    <td><input type="text" name="prn" id="prn"></td>
+                </tr>
+                <tr>
+                    <td>Adderss</td>
+                    <td><textarea name="address" id="address" cols="30" rows="10" style="resize: none;"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="text" name="mobile" id="mobile"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Submit" id="submit" onclick="stdDetails()"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="result">
+            <textarea name="result" id="result" cols="50 " rows="25" style="resize: none; "></textarea>
+        </div>
+        <script src="college.js"></script>
+</body>
+
+</html>
